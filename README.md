@@ -13,14 +13,35 @@ O objetivo foi criar uma atmosfera imersiva, onde cada elemento visual conversa 
 🎨 As imagens do portfólio são exibidas com molduras ornamentadas, reforçando o caráter artístico e simbólico da tatuagem como um **ritual visual**.
 
 > Este projeto não representa um estúdio real. Foi feito como vitrine para as minhas habilidades de desenvolvimento front-end.
+---
+
+## ✨ Sobre o Processo Criativo
+
+Depois de definir o tema central, recorri ao ChatGPT para me ajudar a criar o **conceito visual** do projeto, incluindo o **branding** e a personagem fictícia **Aurora Vesper**, que se tornou a "cliente" ideal para esta narrativa.
+
+Apartir disso, mergulhei em referências visuais explorando a **história, a arte e arquitetura gótica**, **os vitrais medievais** e o **papel de parede vitoriano**, que aparece como plano de fundo na seção de portfólio.
+
+>Uma curiosidade interessante é que o papel de parede vitoriano, conhecido por suas cores vivas e muitas vezes cheio de desenhos florais, era produzido com tintas à base de arsênico o que o tornava tão belo quanto perigoso, não só para os amantes de uma boa decoração, mas também para todos os que frequentassem suas casas. 
+>E esse é um fato que, ao ler sobre, me veio um pensamento de *"como algo consegue ser tão elegante e morbido ao mesmo tempo?"*
+
+>Essa dualidade me fascinou e influenciou diretamente na escolha estética do projeto.
+
+Ao longo da pesquisa, segui com o meu processo pessoal de criação:
+
+Talvez por instinto ou por falta de habilidades com ferramentas como o figma, gosto de desenhar meus projetos a mão. Com lápis e papel mesmo! Isso me ajuda a visualizar ideias de forma mais livre e intuitiva ([clique aqui](assets/img/pic.jpg)).
+
+Dessa forma, sinto que consigo extrair com mais fidelidade o que está na minha mente direto para o código, sem perder o frescor da ideia inicial.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Ferramentas e Tecnologias Utilizadas
 
 - **HTML5**  
 - **CSS3**  
-- **Bootstrap Icons**   
+- **Bootstrap Icons**
+- **ChatGpt** *(branding e escopo do projeto)*
+- **Pinterest e Cosmos.so** 
+*(Inspiração visual e pesquisa)* 
 
 ---
 
@@ -36,7 +57,7 @@ O objetivo foi criar uma atmosfera imersiva, onde cada elemento visual conversa 
 
 ## 📸 Prévia
 
-Você pode visualizar o projeto completo no meu portfólio em:  
-👉 [https://maddusilva.tech](https://maddusilva.tech)
+Você pode visualizar o projeto completo em:  
+👉 [Studio Tattoo](https://landing-page-goth-tattooer.vercel.app/)
 
 ---
