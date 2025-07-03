@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Inconsolata:wght@200..900&family=WindSong:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #0D0D0D;
+  --secondary-color: #4B1C2F;
+  --terciary-color: #630000;
+  --text-color: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Inconsolata", monospace;
+  background-color: var(--primary-color);
+}
+
+.moldura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.video-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.conteudo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 2rem 0;
+}
+
+/* Tipografia e elementos */
+h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: "WindSong", cursive;
+  color: var(--text-color);
+  text-shadow: 5px 5px 19px #630000;
+}
+
+i {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  text-shadow: 1px 1px 3px #630000;
+  margin: 0.5rem;
+}
+
+.arrow-down img {
+  width: 1.3rem;
+  height: 1.3rem;
+  opacity: 0.5;
+}
+
+span {
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: "Cormorant Infant", serif;
+  color: var(--text-color);
+  text-shadow: 5px 5px 19px #630000;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+hr {
+  width: 40%;
+  border-color: var(--text-color);
+  margin: 0.5rem auto;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.arrow-down {
+  display: flex;
+  justify-content: center;
+}
+
+/* ABOUT */
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem;
+  margin-left: 5rem;
+  gap: 1rem;
+  width: 70%;
+}
+
+.content-about-left {
+  flex: 1;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.content-about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moldura-img-about {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moldura-img-about .moldura-frame {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.moldura-img-about .foto-about {
+  position: absolute;
+  width: 55%;
+  height: 50%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+
+/* Portfolio */
+.portfolio {
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    0 -40px 40px -20px rgba(0, 0, 0, 0.5),
+    /* sombra para cima */
+    0 40px 40px -20px rgba(0, 0, 0, 0.5);
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  filter: blur(3px);
+}
+
+.container-portfolio {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.portfolio-img {
+  position: relative;
+  width: 70%;
+  height: 100%;
+}
+
+/* Moldura base */
+.moldura-portfolio {
+  position: absolute;
+
+  width: 200px;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Moldura por cima */
+.moldura-portfolio .moldura-frame {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Foto por baixo da moldura */
+.moldura-portfolio .foto-portfolio {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+  z-index: 1;
+
+}
+
+/* Remover legenda */
+.moldura-portfolio figcaption {
+  display: none;
+}
+
+/* Posições artísticas personalizadas */
+.moldura-portfolio:nth-child(1) {
+  top: 5%;
+  left: 9%;
+
+  width: 150px;
+  height: 180px;
+}
+
+.moldura-portfolio:nth-child(2) {
+  top: 5%;
+  left: 28%;
+
+  width: 100px;
+  height: 150px;
+}
+
+.moldura-portfolio:nth-child(3) {
+  top: 5%;
+  left: 43.5%;
+
+  width: 110px;
+  height: 150px;
+}
+
+.moldura-portfolio:nth-child(4) {
+  top: 5%;
+  right: 28%;
+
+  width: 100px;
+  height: 150px;
+}
+
+.moldura-portfolio:nth-child(5) {
+  top: 5%;
+  right: 7.5%;
+
+  width: 150px;
+  height: 180px;
+}
+
+.moldura-portfolio:nth-child(6) {
+  top: 39%;
+  left: 9%;
+
+  width: 130px;
+  height: 140px;
+}
+
+.moldura-portfolio:nth-child(7) {
+  top: 39%;
+  left: 28%;
+
+  width: 100px;
+  height: 130px;
+}
+
+.moldura-portfolio:nth-child(8) {
+  top: 43%;
+  left: 44%;
+
+  width: 100px;
+  height: 120px;
+}
+
+.moldura-portfolio:nth-child(9) {
+  top: 36%;
+  right: 25%;
+
+  width: 160px;
+  height: 160px;
+}
+
+.moldura-portfolio:nth-child(10) {
+  top: 38%;
+  right: 9%;
+
+  width: 120px;
+  height: 160px;
+}
+
+.moldura-portfolio:nth-child(11) {
+  bottom: 0%;
+  left: 10%;
+
+  width: 120px;
+  height: 170px;
+}
+
+.moldura-portfolio:nth-child(12) {
+  bottom: 0%;
+  left: 28%;
+
+  width: 100px;
+  height: 150px;
+}
+
+.moldura-portfolio:nth-child(13) {
+  bottom: 0%;
+  left: 43.5%;
+
+  width: 110px;
+  height: 150px;
+}
+
+.moldura-portfolio:nth-child(14) {
+  bottom: 0%;
+  right: 28%;
+
+  width: 100px;
+  height: 150px;
+}
+
+.moldura-portfolio:nth-child(15) {
+  bottom: 3%;
+  right: 9%;
+
+  width: 120px;
+  height: 130px;
+}
+
+/* Efeito opcional de hover */
+.moldura-portfolio:nth-child(2):hover,
+.moldura-portfolio:nth-child(3):hover,
+.moldura-portfolio:nth-child(4):hover,
+.moldura-portfolio:nth-child(6):hover,
+.moldura-portfolio:nth-child(7):hover,
+.moldura-portfolio:nth-child(10):hover,
+.moldura-portfolio:nth-child(12):hover,
+.moldura-portfolio:nth-child(13):hover,
+.moldura-portfolio:nth-child(14):hover,
+.moldura-portfolio:nth-child(15):hover {
+  transform: scale(1.5) rotate(0deg);
+  transition: transform 0.4s ease;
+  z-index: 10;
+}
+
+/* Contact */
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-color);
+  padding: 1.3rem;
+}
+
+.container-contact {
+  width: 70%;
+  margin-top: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.content-contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.left-contact {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.right-contact {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.text-contact p {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.container-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.container-list ul {
+  width: 100%;
+}
+
+.container-list li {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container-list i {
+  font-size: 1.2rem;
+}
+
+.redes-sociais-contact {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: start;
+}
+
+.redes-sociais-contact a {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  transform: translateY(0);
+}
+
+.redes-sociais-contact a:hover {
+  transform: translateY(-5px);
+  color: var(--terciary-color);
+}
+
+.right-contact form {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.right-contact input,
+.right-contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  gap: 0.3rem;
+
+  font-family: "Inconsolata", monospace;
+
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0 #630000;
+  color: var(--text-color);
+
+  font-size: 1rem;
+}
+
+.message {
+  height: 200px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+
+  width: 40%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  border: none;
+  box-shadow: 0 0 10px 0 #630000;
+  border-radius: 3px;
+  background-color: var(--text-color);
+  color: var(--terciary-color);
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: var(--terciary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
