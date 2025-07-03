@@ -2,7 +2,7 @@
 
 Este é um projeto fictício de landing page criado com foco em design, performance e narrativa visual. Inspirado na estética **gótica medieval**, ele foi desenvolvido como parte do meu portfólio como **desenvolvedora web** para mostrar minha capacidade de transformar conceitos visuais intensos e artísticos em experiências digitais impactantes.
 
-![Capa do Projeto](assets\img\capa.png)
+![Capa do Projeto](assets/img/capa.png)
 
 ## ✨ Sobre o Projeto
 
